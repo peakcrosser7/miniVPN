@@ -1,5 +1,5 @@
 # miniVPN
-HUST, CSE, 2021 Computer Network Security Experiment, VPN Lab  
+HUST, CSE, IS, 2021 Computer Network Security Experiment, VPN Lab  
 
 ## 文档说明
 * `server.c`: VPN服务端源码  
