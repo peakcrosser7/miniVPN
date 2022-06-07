@@ -295,8 +295,8 @@ void selectTunnel(SSL* ssl, int sockfd, int tunfd) {
 
 //获取服务端分配的虚拟IP
 int recvVirtualIP(SSL* ssl) {
-    char buf[10];
-    SSL_read(ssl,buf,10);
+    char buf[10]={0};
+    SSL_read(ssl,buf,9);
     int virtualIP = atoi(buf);
     printf("virtualIP: 192.168.53.%d/24\n",virtualIP);
     return virtualIP;
